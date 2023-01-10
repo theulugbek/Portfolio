@@ -1,0 +1,128 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.box {
+    text-align: center;
+    padding: 30px 0;
+    background-image: linear-gradient(blue 0 51%, black 53% 100%);
+}
+.pic {
+    height: 250px;
+    border-radius: 50%;
+    border: 6px solid white;
+    box-shadow: 0 0 20px white;
+    margin-bottom: 13px;
+}
+.name {
+    font-size: 30px;
+    margin: 0;
+    color: white;
+}
+.link {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+.item {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px auto;
+}
+.div {
+    font-size: 20px;
+    list-style: none;
+    margin-right: 24px;
+    transition: 0.2s all linear;
+}
+.icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+    color: dodgerblue;
+    transition: 0.2s all linear;
+}
+.p {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    
+}
+.icon1 {
+    font-size: 45px;
+    margin-bottom: 12px;
+    color: red;
+    transition: 0.2s all linear;
+}
+.div:hover .icon {
+    text-shadow: 0 0 6px blue;
+}
+.div:hover .icon1 {
+    text-shadow: 0 0 6px red;
+}
+.div:hover {
+    transform: scale(1.1);
+}
+@media(max-width:450px){
+.div {
+    font-size: 15px;
+}
+.pic {
+    height: 200px;
+}
+.p {
+    font-size: 16px;
+}
+.ul {
+    justify-content: center;
+}
+.icon, .icon1 {
+    font-size: 40px;
+}
+.box {
+    background-size: cover;
+}
+.name {
+    font-size: 25px;
+}
+}
+@media(max-width:400px){
+    .ul {
+        flex-wrap: wrap;
+    }
+    .div {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    .box {
+        background-image: linear-gradient(blue 0 40%, black 43% 100%);
+    }
+}
+@media(max-width:300px){
+    .div {
+        width: 100%;
+    }
+    .box {
+        background-image: linear-gradient(blue 0 30%, black 33% 100%);
+    }
+}
